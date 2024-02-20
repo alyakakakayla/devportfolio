@@ -4,6 +4,7 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -12,6 +13,7 @@ html {
 
 body {
     background-color: #181824;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -174,12 +176,12 @@ section {
     text-align: center;
     font-size: 40px;
     padding-top: 20%;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-bottom: 30%;
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     #welcome > h1 {
         font-size: 25px;
     }
@@ -231,7 +233,7 @@ section {
   }
 
 .skills-image img {
-    height: 610px;
+    height: 590px;
     width: auto;
     animation: breathe 4s infinite alternate;
     padding-left: 80px;
@@ -241,6 +243,8 @@ section {
 @media (max-width: 1024px) {
     #about > .container {
       flex-direction: column;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   
     .description, .skills-image {
@@ -251,6 +255,15 @@ section {
 
     .skills-image img {
         width: 590px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-image img {
+        padding-left: 0;
+        padding-right: 0;
+        width: 70%;
         height: auto;
     }
 }
@@ -268,17 +281,28 @@ section {
     }
 
     .skills-image img {
-        width: 500px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 70vw;
         height: auto;
-        text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1201px) {
+    #about > .container > .description {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
     .skills-image img {
-        padding-left: 0;
-        padding-right: 0;
-        width: 350px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 430px;
+        height: auto;
     }
 }
 
