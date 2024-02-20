@@ -42,7 +42,7 @@ body {
     display: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 500px) {
     .navbar ul {
         position: fixed;
         width: 100%;
@@ -129,10 +129,10 @@ section {
 
 @keyframes changeinvert {
     0% {
-        color: #ea366f;
+        color: #fa5489;
     }
     25% {
-        color: #ea366f;
+        color: #fa5489;
     }
     50% {
         color: #ffffff;
@@ -145,18 +145,29 @@ section {
     }
 }
 
-.welcome, .about, .work, .contact {
+#welcome, #about, #work, #contact {
     padding: 30%;
     height: 100vh;
 }
 
-.welcome > h1 {
+#welcome {
     top: 50%;
     left: 50%;
+}
+
+#welcome > h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    position: absolute;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 500px) {
+    #welcome > h1 {
+        font-size: 25px;
+    }
 }
 
 .name {
@@ -165,11 +176,27 @@ section {
     animation: changeinvert 5s infinite alternate;
 }
 
-.about, .work, .contact {
+#about, #work, #contact {
     background-color: #181824;
 }
 
-.about > h1 {
+#about > h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: absolute;
+
+}
+
+#work > h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: absolute;
+
+}
+
+#contact > h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
