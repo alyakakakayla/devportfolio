@@ -1,0 +1,134 @@
+/*--------------------------------navigation bar--------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #181824;
+}
+
+.navbar ul {
+    z-index: 1;
+    float: right;
+}
+
+.navbar ul li {
+    display: inline;
+    line-height: 80px;
+}
+
+.checkbutton {
+    display: none;
+    font-size: 30px;
+    color: #ea366f;
+    float: right;
+    line-height: 80px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #181824;
+        text-align: center;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+    .checkbutton:hover {
+        color: #14cfb3;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+}
+
+.navbar a {
+    position: relative;
+    color: #ea366f;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.navbar a:hover { /*pseudoclass selector*/
+    color: #14cfb3;
+  }
+
+  
+.navbar a::after { /*pseudoelement selector*/ /*underlines hovered link in navbar*/
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #14cfb3;
+    transition: width 0.3s ease; /*transition effect*/
+}
+  
+.navbar a:hover::after {
+    width: 100%; /*expands line on hover*/
+}
+
+#no-underline::after {
+    display: none; /*for logo in navbar*/
+}
+
+/*--------------------------------section--------------------------------*/
+section {
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-135deg, #ea366f, #181824, #14cfb3);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50% ;
+    }
+    50% {
+        background-position: 100% 50% ;
+    }
+    100% {
+        background-position: 0 50% ;
+    }
+}
+
+.title {
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: absolute;
+}
