@@ -200,7 +200,7 @@ section {
     overflow: hidden;
 }
 
-.description {
+#about > .container > .description {
     padding-left: 80px;
     padding-right: 80px;
     color: #ffffff;
@@ -235,7 +235,7 @@ section {
 }
 
 @media (max-width: 1060px) {
-    .container {
+    #about > .container {
       flex-direction: column;
     }
   
@@ -318,6 +318,20 @@ section {
     padding-top: 80px;
 }
 
+#contact > .container > .description {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
     #contact {
         padding-top: 50%;
@@ -326,3 +340,71 @@ section {
         font-size: 35px;
     }
 }
+
+.form-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-row {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        height: 40px;
+        width: 30%;
+        background-color: #181824;
+        color: #fa5489;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid #181824;
+    }
+
+    input[type="submit"]:hover {
+        color: #14cfb3;
+        font-weight: 700;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #14cfb3;
+        border-radius: 5px;
+        background-color: #373144;
+        color: #ffffff;
+        font-family: 'Montserrat';
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #fa5489;
+    }
+
+    input[type="text"]::placeholder {
+        color: #ffffff; 
+        font-family: 'Montserrat';
+    }
+
+    input[name="message"] {
+        height: 150px;
+        padding-top: -30px;
+    }
+
+    @media (max-width: 700px) {
+        form {
+            width: 400px;
+            text-align: center;
+        }
+    }
