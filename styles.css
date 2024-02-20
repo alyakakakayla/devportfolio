@@ -46,7 +46,13 @@ body {
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    .navbar ul li a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
     .navbar ul {
         position: fixed;
         width: 100%;
@@ -107,6 +113,7 @@ body {
 #no-underline::after {
     display: none; /*for logo in navbar*/
 }
+
 
 /*--------------------------------section--------------------------------*/
 section {
@@ -172,7 +179,7 @@ section {
     padding-bottom: 30%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480) {
     #welcome > h1 {
         font-size: 25px;
     }
@@ -211,7 +218,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     line-height: 40px;
     display: flex;
     align-items: center;
@@ -231,14 +238,7 @@ section {
     padding-right: 80px;
 }
 
-@media (max-width: 1200px) {
-    .skills-image img {
-        width: 590px;
-        height: auto;
-    }
-}
-
-@media (max-width: 1060px) {
+@media (max-width: 1024px) {
     #about > .container {
       flex-direction: column;
     }
@@ -248,12 +248,19 @@ section {
       width: 100%; 
       text-align: center;
     }
+
+    .skills-image img {
+        width: 590px;
+        height: auto;
+    }
 }
 
-@media (max-width: 600px) {
-    .description {
-        font-size: 15px;
-        line-height: 25px;
+@media (max-width: 768px) {
+    #about > .container > .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+        line-height: 20px;
     }
 
     #about > h1 > .bold{
@@ -267,7 +274,7 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .skills-image img {
         padding-left: 0;
         padding-right: 0;
@@ -285,30 +292,12 @@ section {
     padding-top: 80px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #work {
-        padding-top: 60%;
+        padding-top: 0;
     }
     #work > h1 > .bold{
         font-size: 35px;
-    }
-}
-
-@media (max-width: 850px) {
-    #work {
-        padding-top: 10%;
-    }
-}
-
-@media (max-width: 750px) {
-    #work {
-        padding-top: 20%;
-    }
-}
-
-@media (max-width: 650px) {
-    #work {
-        padding-top: 35%;
     }
 }
 
@@ -336,12 +325,19 @@ section {
     align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #contact {
         padding-top: 50%;
     }
     #contact > h1 > .bold{
         font-size: 35px;
+    }
+
+    #contact > .container > .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+        line-height: 20px;
     }
 }
 
@@ -350,6 +346,7 @@ section {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
     form {
@@ -406,7 +403,7 @@ section {
         padding-top: -30px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
         form {
             width: 400px;
             text-align: center;
