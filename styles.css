@@ -123,6 +123,9 @@ body {
     display: none; /* omit underline effect for logo */
 }
 
+#no-underline:hover {
+    filter: invert(100%);
+}
 
 /*--------------------------------section--------------------------------*/
 section {
@@ -471,6 +474,10 @@ input[name="message"] {
 #trex-icon img {
     height: 65px;
     width: auto;
+}
+
+#trex-icon img:hover{
+    filter: invert(100%);
 }
 
 /*--------------------------------footer--------------------------------*/
