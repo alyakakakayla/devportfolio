@@ -1,4 +1,4 @@
-/*--------------------------------navigation bar--------------------------------*/
+/*--------------------------------base--------------------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
 }
 
+/*--------------------------------navigation bar--------------------------------*/
 .navbar {
     position: fixed;
     z-index: 2;
@@ -45,7 +46,7 @@ body {
     display: none;
 }
 
-#check {
+#check { /* checkbox instead of button when no js */
     display: none;
 }
 
@@ -98,12 +99,12 @@ body {
     font-size: large;
 }
 
-.navbar a:hover { /*pseudoclass selector*/
+.navbar a:hover {
     color: #14cfb3;
   }
 
   
-.navbar a::after { /*pseudoelement selector*/ /*underlines hovered link in navbar*/
+.navbar a::after { /* underlines hovered link */
     content: '';
     position: absolute;
     left: 0;
@@ -111,15 +112,15 @@ body {
     width: 0;
     height: 2px;
     background-color: #14cfb3;
-    transition: width 0.3s ease; /*transition effect*/
+    transition: width 0.3s ease; /* transition effect */
 }
   
 .navbar a:hover::after {
-    width: 100%; /*expands line on hover*/
+    width: 100%; /* expands line on hover */
 }
 
 #no-underline::after {
-    display: none; /*for logo in navbar*/
+    display: none; /* omit underline effect for logo */
 }
 
 
@@ -250,7 +251,7 @@ section {
     100% {
         transform: scale(1);
     }
-  }
+}
 
 .skills-image img {
     height: 590px;
