@@ -185,7 +185,7 @@ section {
 }
 
 /*--------------------------------welcome--------------------------------*/
-#welcome > h1 {
+#welcome h1 {
     z-index: 1;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -199,12 +199,18 @@ section {
     padding-bottom: 30%;
 }
 
+#welcome .subtitle {
+    font-size: 20px;
+}
+
 @media (max-width: 480px) {
-    #welcome > h1 {
+    #welcome h1 {
         font-size: 25px;
     }
-    
-    #welcome > .title > .bold {
+    #welcome .subtitle {
+        font-size: 10px;
+    }
+    #welcome .title .bold {
         font-size: 35px;
     }
 }
@@ -216,7 +222,7 @@ section {
 }
 
 /*--------------------------------about--------------------------------*/
-#about > h1 {
+#about h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -225,19 +231,19 @@ section {
     padding-top: 80px;
 }
 
-#about > .container {
+#about .container {
     padding-top: 50px;
     display: flex;
     overflow: hidden;
 }
 
-#about > .container > .description {
+#about .container .description {
     padding-left: 80px;
     padding-right: 80px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     line-height: 40px;
     display: flex;
@@ -257,15 +263,12 @@ section {
 }
 
 .skills-image img {
-    height: 590px;
-    width: auto;
     animation: breathe 4s infinite alternate;
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
-    #about > .container {
+    #about .container {
       flex-direction: column;
       padding-right: 20px;
       padding-left: 20px;
@@ -277,43 +280,22 @@ section {
       text-align: center;
     }
 
-    .skills-image img {
-        width: 590px;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .skills-image img {
-        padding-left: 0;
-        padding-right: 0;
-        width: 70%;
-        height: auto;
-    }
 }
 
 @media (max-width: 768px) {
-    #about > .container > .description {
+    #about .container .description {
         padding-left: 20px;
         padding-right: 20px;
         font-size: 10px;
         line-height: 20px;
     }
-
-    #about > h1 > .bold{
+    #about h1 .bold{
         font-size: 35px;
-    }
-
-    .skills-image img {
-        padding-left: 0;
-        padding-right: 0;
-        width: 70vw;
-        height: auto;
     }
 }
 
 @media (min-width: 1201px) {
-    #about > .container > .description {
+    #about .container .description {
         padding-left: 40px;
         padding-right: 40px;
         font-size: 20px;
@@ -331,7 +313,7 @@ section {
 }
 
 /*--------------------------------work--------------------------------*/
-#work > h1 {
+#work h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -344,13 +326,13 @@ section {
     #work {
         padding-top: 0;
     }
-    #work > h1 > .bold{
+    #work h1 .bold{
         font-size: 35px;
     }
 }
 
 /*--------------------------------contact--------------------------------*/
-#contact > h1 {
+#contact h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -359,7 +341,7 @@ section {
     padding-top: 80px;
 }
 
-#contact > .container > .description {
+#contact .container .description {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 5%;
@@ -377,14 +359,14 @@ section {
     #contact {
         padding-top: 0;
     }
-    #contact > h1 > .bold{
+    #contact h1 .bold{
         font-size: 35px;
     }
 
-    #contact > .container > .description {
+    #contact .container .description {
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
 }
@@ -465,7 +447,7 @@ input[name="message"]::placeholder {
 
 @media (max-width: 480px) {
     .form-container form {
-        width: 200px;
+        width: 300px;
     }
     .form-container {
         width: 100vw;
@@ -510,11 +492,11 @@ input[name="message"]::placeholder {
     text-align: center;
 }
 
-.footer {
+#footer {
     height: 100px;
 }
 
-#footer > .footer-text{
+#footer .footer-text{
     text-align: center;
     color: #ffffff;
     text-align: center;
@@ -524,11 +506,11 @@ input[name="message"]::placeholder {
 }
 
 @media (max-width: 468px) {
-    #footer > .footer-text {
+    #footer .footer-text {
         font-size: 10px;
         padding: 15px;;
     }
-    #footer > .footer-images img {
+    #footer .footer-images img {
         width: 30px;
         height: auto;
     }
