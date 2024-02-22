@@ -1,4 +1,4 @@
-/*--------------------------------base--------------------------------*/
+/*--------------------------------all--------------------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +14,148 @@ html {
 
 body {
     overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+    /*--------------------------------nav--------------------------------*/
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #181824;
+        text-align: center;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+    .checkbutton:hover {
+        color: #14cfb3;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    /*--------------------------------welcome--------------------------------*/
+    #welcome h1 {
+        font-size: 25px;
+    }
+    #welcome .subtitle {
+        font-size: 10px;
+    }
+    #welcome .title .bold {
+        font-size: 35px;
+    }
+
+    /*--------------------------------contact--------------------------------*/
+    .form-container form {
+        width: 300px;
+    }
+    .form-container {
+        width: 100vw;
+        margin: 0;
+    }
+    input[type="submit"] {
+        width: 50vw;
+    }
+
+    /*--------------------------------footer--------------------------------*/
+    #footer .footer-text {
+        font-size: 10px;
+        padding: 15px;;
+    }
+    #footer .footer-images img {
+        width: 30px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .navbar ul li a{
+        font-size: 13px;
+    }
+
+    #about .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    #about h1 .bold{
+        font-size: 35px;
+    }
+
+    #work {
+        padding-top: 0;
+    }
+    #work h1 .bold{
+        font-size: 35px;
+    }
+
+    #contact {
+        padding-top: 0;
+    }
+    #contact h1 .bold{
+        font-size: 35px;
+    }
+
+    #contact .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .form-container form {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form-container {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #about .container {
+      flex-direction: column;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .description, .skills-image {
+      flex: none; 
+      width: 100%; 
+      text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .skills-image img {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 430px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1201px) {
+    #about .container .description {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 /*--------------------------------navigation bar--------------------------------*/
@@ -48,41 +190,6 @@ body {
 
 #check { /* checkbox instead of button when no js */
     display: none;
-}
-
-@media (max-width: 768px) {
-    .navbar ul li a{
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #181824;
-        text-align: center;
-        right: -100%;
-        transition: all 0.5s;
-    }
-
-    .navbar ul li {
-        display: block;
-    }
-
-    .checkbutton {
-        display: block;
-    }
-
-    .checkbutton:hover {
-        color: #14cfb3;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-    }
-
 }
 
 .navbar ul li:hover {
@@ -173,7 +280,7 @@ section {
 }
 
 #about, #work, #contact {
-    height: 100vh;
+    height: 800px;
     background-color: #181824;
 }
 
@@ -200,18 +307,6 @@ section {
 
 #welcome .subtitle {
     font-size: 20px;
-}
-
-@media (max-width: 480px) {
-    #welcome h1 {
-        font-size: 25px;
-    }
-    #welcome .subtitle {
-        font-size: 10px;
-    }
-    #welcome .title .bold {
-        font-size: 35px;
-    }
 }
 
 .bold {
@@ -266,51 +361,6 @@ section {
     width: 100%;
 }
 
-@media (max-width: 1024px) {
-    #about .container {
-      flex-direction: column;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-  
-    .description, .skills-image {
-      flex: none; 
-      width: 100%; 
-      text-align: center;
-    }
-
-}
-
-@media (max-width: 768px) {
-    #about .container .description {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 10px;
-        line-height: 20px;
-    }
-    #about h1 .bold{
-        font-size: 35px;
-    }
-}
-
-@media (min-width: 1201px) {
-    #about .container .description {
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 20px;
-        line-height: 40px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .skills-image img {
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 430px;
-        height: auto;
-    }
-}
-
 /*--------------------------------work--------------------------------*/
 #work h1 {
     color: #ffffff;
@@ -319,15 +369,6 @@ section {
     text-align: center;
     font-size: 40px;
     padding-top: 80px;
-}
-
-@media (max-width: 768px) {
-    #work {
-        padding-top: 0;
-    }
-    #work h1 .bold{
-        font-size: 35px;
-    }
 }
 
 /*--------------------------------contact--------------------------------*/
@@ -352,22 +393,6 @@ section {
     text-align: center;
     line-height: 40px;
     align-items: center;
-}
-
-@media (max-width: 768px) {
-    #contact {
-        padding-top: 0;
-    }
-    #contact h1 .bold{
-        font-size: 35px;
-    }
-
-    #contact .container .description {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 15px;
-        line-height: 20px;
-    }
 }
 
 .form-container {
@@ -433,31 +458,6 @@ input[name="message"]::placeholder {
     position: absolute;
 }
 
-
-@media (max-width: 768px) {
-    .form-container form {
-        width: 400px;
-        margin: 0 auto;
-    }
-    .form-container {
-        width: 500px;
-    }
-}
-
-@media (max-width: 480px) {
-    .form-container form {
-        width: 300px;
-    }
-    .form-container {
-        width: 100vw;
-        margin: 0;
-    }
-    input[type="submit"] {
-        width: 50vw;
-    }
-
-}
-
 #contact {
     position: relative;
 }
@@ -502,17 +502,6 @@ input[name="message"]::placeholder {
      
     font-size: 15px;
     padding: 20px;
-}
-
-@media (max-width: 468px) {
-    #footer .footer-text {
-        font-size: 10px;
-        padding: 15px;;
-    }
-    #footer .footer-images img {
-        width: 30px;
-        height: auto;
-    }
 }
 
 #backdrop-footer {
