@@ -211,8 +211,10 @@ section {
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    height: 70px;
+    height: fit-content;
     width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* animation: breathe 4s infinite alternate; */
 }
 
@@ -220,7 +222,11 @@ section {
     background-color: #14cfb3;
 }
 
-.container .skills-images img {
+.skill-name {
+    padding: 10px;
+}
+
+.skills-column .skill img {
     animation: breathe 4s infinite alternate;
     width: 90%;
     height: auto;
@@ -242,7 +248,7 @@ section {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.02);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -453,11 +459,9 @@ input[name="message"]::placeholder {
     #about h1 .bold{
         font-size: 35px;
     }
-    .skill {
-        height: auto;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .skill img {
+        height: fit-content;
+        width: auto;
     }
     #work {
         padding-top: 0;
