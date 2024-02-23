@@ -180,8 +180,8 @@ section {
 /*--------------------------------about--------------------------------*/
 #about .container {
     display: flex;
-    flex-direction: column;
-    padding-top: 10%;
+    justify-content: center;    
+    padding-top: 3%;
 }
 
 #about h1 {
@@ -196,13 +196,13 @@ section {
     justify-content: center;
     display: flex;
     height: auto;
-    width: 100%;
 }
 
 .skills-column {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 
 .skill {
@@ -215,11 +215,25 @@ section {
     width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* animation: breathe 4s infinite alternate; */
 }
 
-.skill:hover {
-    background-color: #14cfb3;
+.skill img:hover {
+    animation: breathe 1s forwards;
+    /* border: solid 5px #14cfb3;
+    border-radius: 20px;
+    animation: fadein 1.5s; */
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50;
+    }
+    100% {
+        opacity: 100;
+    }
 }
 
 .skill-name {
@@ -227,7 +241,6 @@ section {
 }
 
 .skills-column .skill img {
-    animation: breathe 4s infinite alternate;
     width: 90%;
     height: auto;
 }
@@ -238,20 +251,22 @@ section {
     font-weight: 300;
     text-align: justify;
     line-height: 40px;
-    padding: 10px;
     display: flex;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @keyframes breathe {
     0% {
         transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
+        filter: hue-rotate(0deg);
+        filter: drop-shadow(0px 0px 5px transparent);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.1);
+        filter: hue-rotate(-120deg);
+        filter: drop-shadow(0px 0px 8px #14cfb3);
     }
 }
 
@@ -446,6 +461,12 @@ input[name="message"]::placeholder {
     .skills-column {
         width: fit-content;
     }
+    #about .container .skills-images {
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
 } 
 
 @media (max-width: 768px) {
@@ -458,10 +479,6 @@ input[name="message"]::placeholder {
     }
     #about h1 .bold{
         font-size: 35px;
-    }
-    .skill img {
-        height: fit-content;
-        width: auto;
     }
     #work {
         padding-top: 0;
@@ -496,17 +513,18 @@ input[name="message"]::placeholder {
 
 @media (max-width: 1024px) {
     #about .container {
-      flex-direction: column;
-      padding-right: 20px;
-      padding-left: 20px;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
     }
-  
-    .description, .skills-images {
-      flex: none; 
-      width: 100%; 
-      text-align: center;
+    .description {
+        flex: none; 
+        width: 100%; 
+        text-align: center;
     }
-
+    .skills-column {
+        width: 150px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -518,12 +536,9 @@ input[name="message"]::placeholder {
         line-height: 40px;
     }
 }
-
-@media (max-width: 1200px) {
-    .skills-images img {
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 430px;
-        height: auto;
+/* @media (min-width: 480px) {
+    .skills-column {
+        margin-right: 5%;
+        margin-left: 5%;
     }
-}
+} */
