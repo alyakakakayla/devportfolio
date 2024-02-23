@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
 }
 
 html {
@@ -190,14 +191,39 @@ section {
     padding-top: 80px;
 }
 
-#about .skills-image {
+#about .skills-images {
     align-items: center;
+    justify-content: center;
     display: flex;
     height: auto;
+    width: 100%;
 }
 
-.skills-image img {
-    width: fit-content;
+.skills-column {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: auto;
+    /* animation: breathe 4s infinite alternate; */
+}
+
+.skill:hover {
+    background-color: #14cfb3;
+}
+
+.container .skills-images img {
+    animation: breathe 4s infinite alternate;
+    width: 90%;
+    height: auto;
 }
 
 #about .container .description {
@@ -221,11 +247,6 @@ section {
     100% {
         transform: scale(1);
     }
-}
-
-.container .skills-image img {
-    animation: breathe 4s infinite alternate;
-    width: 90%;
 }
 
 /*--------------------------------work--------------------------------*/
@@ -416,6 +437,9 @@ input[name="message"]::placeholder {
     #welcome .title .bold {
         font-size: 35px;
     }
+    .skills-column {
+        width: fit-content;
+    }
 } 
 
 @media (max-width: 768px) {
@@ -429,7 +453,12 @@ input[name="message"]::placeholder {
     #about h1 .bold{
         font-size: 35px;
     }
-
+    .skill {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     #work {
         padding-top: 0;
     }
@@ -468,7 +497,7 @@ input[name="message"]::placeholder {
       padding-left: 20px;
     }
   
-    .description, .skills-image {
+    .description, .skills-images {
       flex: none; 
       width: 100%; 
       text-align: center;
@@ -487,7 +516,7 @@ input[name="message"]::placeholder {
 }
 
 @media (max-width: 1200px) {
-    .skills-image img {
+    .skills-images img {
         padding-left: 30px;
         padding-right: 30px;
         width: 430px;
