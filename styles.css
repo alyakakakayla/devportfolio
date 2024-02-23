@@ -404,6 +404,15 @@ input[name="message"]::placeholder {
     input[type="submit"] {
         width: 50vw;
     }
+    #welcome h1 {
+        font-size: 32px;
+    }
+    #welcome .subtitle {
+        font-size: 17px;
+    }
+    #welcome .title .bold {
+        font-size: 35px;
+    }
 } 
 
 @media (max-width: 768px) {
