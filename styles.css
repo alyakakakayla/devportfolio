@@ -12,228 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-@media (max-width: 480px) {
-    /*--------------------------------nav--------------------------------*/
-    .navbar ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #181824;
-        text-align: center;
-        right: -100%;
-        transition: all 0.5s;
-    }
-
-    .navbar ul li {
-        display: block;
-    }
-
-    .checkbutton {
-        display: block;
-    }
-
-    .checkbutton:hover {
-        color: #14cfb3;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-    }
-
-    /*--------------------------------welcome--------------------------------*/
-    #welcome h1 {
-        font-size: 25px;
-    }
-    #welcome .subtitle {
-        font-size: 10px;
-    }
-    #welcome .title .bold {
-        font-size: 35px;
-    }
-
-    /*--------------------------------contact--------------------------------*/
-    .form-container form {
-        width: 300px;
-    }
-    .form-container {
-        width: 100vw;
-        margin: 0;
-    }
-    input[type="submit"] {
-        width: 50vw;
-    }
-
-    /*--------------------------------footer--------------------------------*/
-    #footer .footer-text {
-        font-size: 10px;
-        padding: 15px;;
-    }
-    #footer .footer-images img {
-        width: 30px;
-        height: auto;
-    }
-
-}
-
-@media (max-width: 800px) {
-    .navbar ul li a{
-        font-size: 13px;
-    }
-
-    #about .container .description {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 10px;
-        line-height: 20px;
-    }
-    #about h1 .bold{
-        font-size: 35px;
-    }
-
-    #work {
-        padding-top: 0;
-    }
-    #work h1 .bold{
-        font-size: 35px;
-    }
-
-    #contact {
-        padding-top: 0;
-    }
-    #contact h1 .bold{
-        font-size: 35px;
-    }
-
-    #contact .container .description {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .form-container form {
-        width: 400px;
-        margin: 0 auto;
-    }
-    .form-container {
-        width: 500px;
-    }
-
-}
-
-@media (max-width: 1024px) {
-    #about .container {
-      flex-direction: column;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-  
-    .description, .skills-image {
-      flex: none; 
-      width: 100%; 
-      text-align: center;
-    }
-
-}
-
-@media (max-width: 1200px) {
-    .skills-image img {
-        padding-left: 30px;
-        padding-right: 30px;
-        width: 430px;
-        height: auto;
-    }
-}
-
-@media (min-width: 1201px) {
-    #about .container .description {
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 20px;
-        line-height: 40px;
-    }
-}
-
-/*--------------------------------navigation bar--------------------------------*/
-.navbar {
-    position: fixed;
-    z-index: 2;
-    height: 80px;
-    width: 100%;
-    padding-top: 10px;
-    background-color: #181824;
-}
-
-.navbar ul {
-    z-index: 1;
-    float: right;
-}
-
-.navbar ul li {
-    display: inline;
-    line-height: 80px;
-}
-
-.checkbutton {
-    display: none;
-    font-size: 30px;
-    color: #ea366f;
-    float: right;
-    line-height: 80px;
-    padding-right: 10px;
-    cursor: pointer;
-}
-
-#check { /* checkbox instead of button when no js */
-    display: none;
-}
-
-.navbar ul li:hover {
-    font-weight: 700;
-
-}
-
-.navbar a {
-    position: relative;
-    color: #ea366f;
-    padding: 15px;
-     
-    font-size: large;
-}
-
-.navbar a:hover {
-    color: #14cfb3;
-  }
-
-  
-.navbar a::after { /* underlines hovered link */
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background-color: #14cfb3;
-    transition: width 0.3s ease; /* transition effect */
-}
-  
-.navbar a:hover::after {
-    width: 100%; /* expands line on hover */
-}
-
-#no-underline::after {
-    display: none; /* omit underline effect for logo */
-}
-
-#no-underline:hover {
-    filter: invert(100%);
-}
-
-/*--------------------------------section--------------------------------*/
+/*--------------------------------welcome backdrop--------------------------------*/
 section {
     z-index: 0;
     width: 100%;
@@ -274,13 +53,85 @@ section {
     }
 }
 
-#welcome {
-    height: 100vh;
-    width: 100vw;
+/*--------------------------------navbar--------------------------------*/
+.navbar {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #181824;
+}
+
+.navbar ul {
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    line-height: 80px;
+}
+
+.checkbutton {
+    z-index: 999;
+    display: none;
+    font-size: 30px;
+    color: #ea366f;
+    line-height: 80px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#check { /* checkbox instead of button when no js */
+    display: none;
+}
+
+.navbar a {
+    position: relative;
+    color: #ea366f;
+    padding: 15px;
+    font-size: large;
+}
+
+.navbar a:hover {
+    color: #14cfb3;
+    font-weight: 700;
+  }
+
+  
+.navbar a::after { /* underlines hovered link */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 0;
+    height: 3px;
+    background-color: #14cfb3;
+    transition: width 0.3s ease;
+}
+  
+.navbar a:hover::after {
+    width: 100%; /* expands line on hover */
+}
+
+#no-underline {
+    z-index: 999;
+}
+
+#no-underline img {
+    padding-bottom: 20%;
+}description
+
+#no-underline::after {
+    display: none; /* omit underline effect for logo */
+}
+
+#no-underline:hover {
+    filter: invert(100%);
 }
 
 #about, #work, #contact {
-    height: 800px;
+    height: fit-content;
     background-color: #181824;
 }
 
@@ -291,18 +142,24 @@ section {
 }
 
 /*--------------------------------welcome--------------------------------*/
-#welcome h1 {
+#welcome {
     z-index: 1;
     color: #ffffff;
-     
-    font-weight: 300;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
     text-align: center;
+    line-height: normal;
+    position: relative;
+    width: 100%; /* fit-content after fixing navbar */
+    height: auto;
+    padding-top: 45vh;
+}
+
+#welcome h1 {
+    font-weight: 300;
     font-size: 40px;
-    padding-top: calc(50vh - 40px);
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 30%;
 }
 
 #welcome .subtitle {
@@ -316,28 +173,31 @@ section {
 }
 
 /*--------------------------------about--------------------------------*/
+#about .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
 #about h1 {
     color: #ffffff;
-     
-    font-weight: 300;
     text-align: center;
     font-size: 40px;
     padding-top: 80px;
 }
 
-#about .container {
-    padding-top: 50px;
+#about .skills-image {
+    align-items: center;
     display: flex;
-    overflow: hidden;
+    height: auto;
 }
 
 #about .container .description {
     padding-left: 80px;
     padding-right: 80px;
     color: #ffffff;
-     
+    font-size: 20px;
     font-weight: 300;
-    font-size: 15px;
     text-align: center;
     line-height: 40px;
     display: flex;
@@ -356,15 +216,14 @@ section {
     }
 }
 
-.skills-image img {
+.container .skills-image img {
     animation: breathe 4s infinite alternate;
-    width: 100%;
+    width: 90%;
 }
 
 /*--------------------------------work--------------------------------*/
 #work h1 {
     color: #ffffff;
-     
     font-weight: 300;
     text-align: center;
     font-size: 40px;
@@ -374,7 +233,6 @@ section {
 /*--------------------------------contact--------------------------------*/
 #contact h1 {
     color: #ffffff;
-     
     font-weight: 300;
     text-align: center;
     font-size: 40px;
@@ -387,11 +245,10 @@ section {
     padding-top: 5%;
     padding-bottom: 20px;
     color: #ffffff;
-     
     font-weight: 300;
     font-size: 20px;
-    text-align: center;
     line-height: 40px;
+    text-align: center;  
     align-items: center;
 }
 
@@ -400,7 +257,6 @@ section {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
 }
 
 .input-row {
@@ -408,7 +264,7 @@ section {
     width: 100%;
 }
 
-input[type="submit"] {
+.input-row input[type="submit"] {
     height: 40px;
     width: 30%;
     background-color: #181824;
@@ -418,6 +274,13 @@ input[type="submit"] {
     font-weight: 500;
     cursor: pointer;
     border: 2px solid #181824;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* input elements are inline and need to be block type before centering */
+}
+
+a #trex-icon img {
+    margin: 0 auto;
 }
 
 input[type="submit"]:hover {
@@ -458,23 +321,16 @@ input[name="message"]::placeholder {
     position: absolute;
 }
 
-#contact {
-    position: relative;
-}
-
-#trex-icon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center; 
-    height: 65px;
-    width: auto;
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 #trex-icon img {
-    height: 65px;
-    width: auto;
+    display: flex;
+    width: 150px;
+    height: auto;
 }
 
 #trex-icon img:hover{
@@ -505,5 +361,124 @@ input[name="message"]::placeholder {
 }
 
 #backdrop-footer {
+    width: 100%;
     height: 145px;
+}
+
+/*--------------------------------media queries--------------------------------*/
+@media (max-width: 480px) {
+    .navbar ul {
+        padding-top: 80px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #181824;
+        text-align: center;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+    .checkbutton:hover {
+        color: #14cfb3;
+    }
+
+    #check:checked ~ ul {
+        padding-top: 80px;
+        right: 0;
+    }
+    .form-container form {
+        width: 300px;
+    }
+    .form-container {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    input[type="submit"] {
+        width: 50vw;
+    }
+} 
+
+@media (max-width: 768px) {
+    #about .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    #about h1 .bold{
+        font-size: 35px;
+    }
+
+    #work {
+        padding-top: 0;
+    }
+    #work h1 .bold{
+        font-size: 35px;
+    }
+
+    #contact {
+        padding-top: 0;
+    }
+    #contact h1 .bold{
+        font-size: 35px;
+    }
+
+    #contact .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .form-container form {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .form-container {
+        width: fit-content;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    #about .container {
+      flex-direction: column;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .description, .skills-image {
+      flex: none; 
+      width: 100%; 
+      text-align: center;
+    }
+
+}
+
+@media (min-width: 1201px) {
+    #about .container .description {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .skills-image img {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 430px;
+        height: auto;
+    }
 }
