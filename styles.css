@@ -160,11 +160,13 @@ section {
 }
 
 #welcome h1 {
+    padding: 10px;
     font-weight: 300;
     font-size: 40px;
 }
 
 #welcome .subtitle {
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -202,8 +204,9 @@ section {
     color: #ffffff;
     font-size: 20px;
     font-weight: 300;
-    text-align: center;
+    text-align: justify;
     line-height: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
