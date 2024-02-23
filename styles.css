@@ -74,12 +74,14 @@ section {
 
 .checkbutton {
     z-index: 999;
+    /* margin-left: 68%; */
     display: none;
-    font-size: 30px;
+    font-size: 40px;
     color: #ea366f;
     line-height: 80px;
-    padding-right: 10px;
+    margin-left: 90%;
     cursor: pointer;
+    position: absolute;
 }
 
 #check { /* checkbox instead of button when no js */
@@ -120,7 +122,7 @@ section {
 
 #no-underline img {
     padding-bottom: 20%;
-}description
+}
 
 #no-underline::after {
     display: none; /* omit underline effect for logo */
@@ -192,9 +194,11 @@ section {
     height: auto;
 }
 
+.skills-image img {
+    width: fit-content;
+}
+
 #about .container .description {
-    padding-left: 80px;
-    padding-right: 80px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 300;
@@ -277,10 +281,6 @@ section {
     text-align: center;
     display: block;
     margin: 0 auto; /* input elements are inline and need to be block type before centering */
-}
-
-a #trex-icon img {
-    margin: 0 auto;
 }
 
 input[type="submit"]:hover {
