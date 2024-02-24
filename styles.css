@@ -38,10 +38,10 @@ section {
 
 @keyframes changeinvert {
     0% {
-        color: #fa5489;
+        color: #ea366f;
     }
     25% {
-        color: #fa5489;
+        color: #ea366f;
     }
     50% {
         color: #ffffff;
@@ -93,7 +93,7 @@ section {
     position: relative;
     color: #ea366f;
     padding: 15px;
-    font-size: large;
+    font-size: 15px;
 }
 
 .navbar a:hover {
@@ -133,7 +133,7 @@ section {
     filter: invert(100%);
 }
 
-#about, #work, #contact {
+#about, #projects, #contact {
     height: fit-content;
     background-color: #181824;
 }
@@ -166,7 +166,8 @@ section {
     font-size: 40px;
 }
 
-#welcome .subtitle {
+#welcome h6 {
+    font-weight: 300;
     padding: 10px;
     font-size: 20px;
 }
@@ -180,6 +181,7 @@ section {
 /*--------------------------------about--------------------------------*/
 #about .container {
     display: flex;
+    align-items: center;
     justify-content: center;    
     padding-top: 3%;
 }
@@ -195,14 +197,22 @@ section {
     align-items: center;
     justify-content: center;
     display: flex;
-    height: auto;
+    width: 70%;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .skills-column {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    height: 100%;
+    padding: 20px;
+}
+
+.skills-images img {
+    height: fit-content;
+    width: auto;
 }
 
 .skill {
@@ -255,6 +265,7 @@ section {
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+    /* width: 70%; */
 }
 
 @keyframes breathe {
@@ -270,8 +281,8 @@ section {
     }
 }
 
-/*--------------------------------work--------------------------------*/
-#work h1 {
+/*--------------------------------projects--------------------------------*/
+#projects h1 {
     color: #ffffff;
     font-weight: 300;
     text-align: center;
@@ -458,8 +469,8 @@ input[name="message"]::placeholder {
     #welcome .title .bold {
         font-size: 35px;
     }
-    .skills-column {
-        width: fit-content;
+    .skill {
+        padding: 20px;
     }
     #about .container .skills-images {
         align-items: center;
@@ -480,10 +491,10 @@ input[name="message"]::placeholder {
     #about h1 .bold{
         font-size: 35px;
     }
-    #work {
+    #projects {
         padding-top: 0;
     }
-    #work h1 .bold{
+    #projects h1 .bold{
         font-size: 35px;
     }
 
@@ -523,7 +534,9 @@ input[name="message"]::placeholder {
         text-align: center;
     }
     .skills-column {
-        width: 150px;
+        width: 120px;
+        height: auto;
+        padding: 20px;
     }
 }
 
@@ -536,9 +549,3 @@ input[name="message"]::placeholder {
         line-height: 40px;
     }
 }
-/* @media (min-width: 480px) {
-    .skills-column {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-} */
