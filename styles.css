@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: #181824;
 }
 
 /*--------------------------------welcome backdrop--------------------------------*/
@@ -232,7 +233,7 @@ section {
 }
 
 .skill img:hover {
-    animation: breathe 1s forwards;
+    animation: breatheblue 1s forwards;
     /* border: solid 5px #14cfb3;
     border-radius: 20px;
     animation: fadein 1.5s; */
@@ -247,8 +248,7 @@ section {
     height: auto;
 }
 /*--------------------------------skills end--------------------------------*/
-
-@keyframes fadein {
+/* @keyframes fadein {
     0% {
         opacity: 0;
     }
@@ -258,7 +258,7 @@ section {
     100% {
         opacity: 100;
     }
-}
+} */
 
 #about .container .description {
     color: #ffffff;
@@ -273,7 +273,7 @@ section {
     /* width: 70%; */
 }
 
-@keyframes breathe {
+@keyframes breatheblue {
     0% {
         transform: scale(1);
         filter: hue-rotate(0deg);
@@ -286,6 +286,19 @@ section {
     }
 }
 
+@keyframes breathepink {
+    0% {
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+        filter: drop-shadow(0px 0px 5px transparent);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: hue-rotate(-120deg);
+        filter: drop-shadow(0px 0px 8px #ea366f);
+    }
+}
+
 /*--------------------------------projects--------------------------------*/
 #projects h1 {
     color: #ffffff;
@@ -293,6 +306,55 @@ section {
     text-align: center;
     font-size: 40px;
     padding-top: 80px;
+}
+
+#projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+#projects .project-titles {
+    font-weight: 500;
+    font-size: 35px;
+    color: #ea366f;
+    /* animation: changeinvert 2s infinite alternate; */
+}
+
+.first-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+#projects .first-project .description {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: fit-content;
+}
+
+.project-image {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.project-image img {
+    width: 90%;
+}
+
+.project-image img:hover {
+    animation: breathepink 1s forwards;
 }
 
 /*--------------------------------contact--------------------------------*/
@@ -371,7 +433,7 @@ input[type="text"]::placeholder {
 
 input[name="message"] {
     height: 100px;
-    padding: 18px 0px 250px 9px;
+    padding: 18px 0px 180px 9px;
 }
 
 input[name="message"]::placeholder {
@@ -502,6 +564,17 @@ input[name="message"]::placeholder {
         font-weight: 300;
         line-height: 20px;
     }
+    #projects .container .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 3%;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    #projects .project-titles {
+        font-size: 20px;
+    }
     #about h1 .bold{
         font-size: 35px;
     }
@@ -511,14 +584,12 @@ input[name="message"]::placeholder {
     #projects h1 .bold{
         font-size: 35px;
     }
-
     #contact {
         padding-top: 0;
     }
     #contact h1 .bold{
         font-size: 35px;
     }
-
     #contact .container .description {
         padding-left: 20px;
         padding-right: 20px;
@@ -526,6 +597,7 @@ input[name="message"]::placeholder {
         font-weight: 300;
         line-height: 20px;
     }
+
     .form-container form {
         width: 60vw;
         margin: 0 auto;
@@ -542,6 +614,16 @@ input[name="message"]::placeholder {
 
 @media (max-width: 1024px) {
     #about .container {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #projects .container {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .first-project {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
