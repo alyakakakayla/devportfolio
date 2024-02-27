@@ -175,6 +175,7 @@ section {
 }
 
 .bold {
+    font-family: 'Chivo Mono', sans-serif;
     font-weight: 600;
     font-size: 50px;
     animation: changeinvert 5s infinite alternate;
@@ -396,7 +397,7 @@ section {
     width: 30%;
     background-color: #181824;
     color: #fa5489;
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -479,9 +480,12 @@ input[name="message"]::placeholder {
     text-align: center;
     color: #ffffff;
     text-align: center;
-     
     font-size: 15px;
     padding: 20px;
+}
+
+.footer-bold {
+    font-weight: 800;
 }
 
 #backdrop-footer {
