@@ -553,6 +553,10 @@ input[name="message"]::placeholder {
     input[type="submit"] {
         width: 50vw;
     }
+    .input-row {
+        margin-bottom: 15px;
+        width: 100%;
+    }
     #submit-button {
         font-size: 15px;
     }
