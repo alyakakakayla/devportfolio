@@ -661,3 +661,20 @@ input[name="message"]::placeholder {
         width: 200px;
     }
 }
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ea366f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #14cfb3;
+}
