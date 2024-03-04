@@ -408,7 +408,7 @@ section {
 
 .input-row input[type="submit"] {
     height: 40px;
-    width: 60%;
+    width: 65%; 
     background-color: #181824;
     color: #fa5489;
     font-family: 'Poppins';
