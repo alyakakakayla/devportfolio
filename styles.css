@@ -104,7 +104,7 @@ section {
   }
 
   
-.navbar a::after { /* underlines hovered link */
+.navbar a::after { /* expands line on hover */
     content: '';
     position: absolute;
     left: 0;
@@ -116,7 +116,7 @@ section {
 }
   
 .navbar a:hover::after {
-    width: 100%; /* expands line on hover */
+    width: 100%; /* keeps underline on click */
 }
 
 #no-underline {
@@ -175,7 +175,7 @@ section {
 }
 
 .bold {
-    font-family: 'Chivo Mono', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 50px;
     animation: changeinvert 5s infinite alternate;
@@ -326,10 +326,15 @@ section {
 }
 
 #projects .project-titles {
+    text-decoration: underline;
     font-weight: 500;
     font-size: 35px;
     color: #ea366f;
     /* animation: changeinvert 2s infinite alternate; */
+}
+
+#projects .project-titles:hover {
+    color: #14cfb3;
 }
 
 .first-project {
