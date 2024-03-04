@@ -566,7 +566,7 @@ input[name="message"]::placeholder {
         font-size: 35px;
     }
     .skill {
-        padding: 20px;
+        padding: 5px;
     }
     .skills-column {
         padding: 10px;
