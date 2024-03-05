@@ -446,6 +446,7 @@ input[type="text"]::placeholder {
     font-family: 'Montserrat';
 }
 
+/*
 input[name="message"] {
     height: 100px;
     padding: 18px 0px 180px 9px;
@@ -454,10 +455,37 @@ input[name="message"] {
 input[name="message"]::placeholder {
     color: #ffffff; 
     font-family: 'Montserrat';
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: absolute;
+}
+*/
+
+textarea {
+    resize: none;
+    height: 100px;
+    padding: 10px 0px 180px 9px;
+    width: 100%;
+    border: 2px solid #14cfb3;
+    border-radius: 5px;
+    background-color: #373144;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+textarea::placeholder {
+    color: #ffffff; 
+    font-family: 'Montserrat';
     /* top: 0;
     padding-top: 10px;
     padding-bottom: 5px;
     position: absolute; */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #fa5489;
 }
 
 .container-icon {
@@ -628,9 +656,9 @@ input[name="message"]::placeholder {
         width: fit-content;
         align-items: center;
     }
-    input[name="message"] {
+    textarea {
         height: 50px;
-        padding: 18px 0px 150px 9px;
+        /* padding: 18px 0px 150px 9px; */
     }
 }
 
