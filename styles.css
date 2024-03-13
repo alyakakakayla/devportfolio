@@ -309,6 +309,15 @@ section {
     }
 }
 
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
 /*--------------------------------projects--------------------------------*/
 #projects h1 {
     color: #ffffff;
@@ -395,7 +404,7 @@ section {
 }
 
 .project-image img:hover {
-    animation: breathepink 1s forwards;
+    animation: breathe 1s forwards;
 }
 
 /*--------------------------------contact--------------------------------*/
