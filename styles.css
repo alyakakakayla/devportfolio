@@ -374,7 +374,6 @@ section {
 }
 
 #projects .second-project .description {
-    order: 1;
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
@@ -386,7 +385,11 @@ section {
     width: fit-content;
 }
 
-.second-project .project-image {
+.first-project .project-image {
+    order: 1;
+}
+
+#projects .first-project .description {
     order: 2;
 }
 
@@ -395,8 +398,8 @@ section {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 6%;
+    margin-bottom: 2%;
 }
 
 .project-image img {
@@ -712,16 +715,18 @@ textarea:focus {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
+        margin-bottom: 40px;
     }
     .second-project {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
     }
-    #projects .second-project .description {
+    #projects .first-project .project-image {
         order: 2;
     }
-    #projects .second-project .project-image {
+    
+    #projects .first-project .description {
         order: 1;
     }
     .description {
