@@ -502,8 +502,8 @@ input[name="message"]::placeholder {
 
 textarea {
     resize: none;
-    height: 100px;
-    padding: 10px 0px 180px 9px;
+    height: 180px;
+    padding: 10px 0px 0px 9px;
     width: 100%;
     border: 2px solid #14cfb3;
     border-radius: 5px;
@@ -642,6 +642,10 @@ textarea:focus {
         padding: 10px;
         width: 100px;
     }
+    textarea {
+        height: 130px;
+        /* padding: 18px 0px 150px 9px; */
+    }
 } 
 
 @media (max-width: 768px) {
@@ -693,10 +697,6 @@ textarea:focus {
     .form-container {
         width: fit-content;
         align-items: center;
-    }
-    textarea {
-        height: 50px;
-        /* padding: 18px 0px 150px 9px; */
     }
 }
 
