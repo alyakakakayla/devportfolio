@@ -135,7 +135,7 @@ section {
     filter: invert(100%);
 }
 
-#about, #projects, #contact {
+#about, #work, #contact {
     height: fit-content;
     background-color: #181824;
 }
@@ -318,8 +318,8 @@ section {
     }
 }
 
-/*--------------------------------projects--------------------------------*/
-#projects h1 {
+/*--------------------------------work--------------------------------*/
+#work h1 {
     color: #ffffff;
     font-weight: 300;
     text-align: center;
@@ -327,7 +327,7 @@ section {
     padding-top: 80px;
 }
 
-#projects .container {
+#work .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +335,7 @@ section {
     padding-top: 3%;
 }
 
-#projects .project-titles {
+#work .project-titles {
     text-decoration: underline;
     font-weight: 500;
     font-size: 35px;
@@ -343,11 +343,11 @@ section {
     /* animation: changeinvert 2s infinite alternate; */
 }
 
-#projects .project-titles span {
+#work .project-titles span {
     color: #ea366f;
 }
 
-#projects .project-titles:hover {
+#work .project-titles:hover {
     color: #14cfb3;
 }
 
@@ -365,7 +365,7 @@ section {
     padding-top: 3%;
 }
 
-#projects .first-project .description {
+#work .first-project .description {
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
@@ -377,7 +377,7 @@ section {
     width: fit-content;
 }
 
-#projects .second-project .description {
+#work .second-project .description {
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
@@ -393,7 +393,7 @@ section {
     order: 1;
 }
 
-#projects .first-project .description {
+#work .first-project .description {
     order: 2;
 }
 
@@ -660,7 +660,7 @@ textarea:focus {
         font-weight: 300;
         line-height: 20px;
     }
-    #projects .container .description {
+    #work .container .description {
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 3%;
@@ -668,16 +668,16 @@ textarea:focus {
         font-weight: 300;
         line-height: 20px;
     }
-    #projects .project-titles {
+    #work .project-titles {
         font-size: 20px;
     }
     #about h1 .bold{
         font-size: 35px;
     }
-    #projects {
+    #work {
         padding-top: 0;
     }
-    #projects h1 .bold{
+    #work h1 .bold{
         font-size: 35px;
     }
     #contact {
@@ -710,7 +710,7 @@ textarea:focus {
         padding-right: 20px;
         padding-left: 20px;
     }
-    #projects .container {
+    #work .container {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
@@ -726,11 +726,11 @@ textarea:focus {
         padding-right: 20px;
         padding-left: 20px;
     }
-    #projects .first-project .project-image {
+    #work .first-project .project-image {
         order: 2;
     }
     
-    #projects .first-project .description {
+    #work .first-project .description {
         order: 1;
     }
     .description {
