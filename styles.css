@@ -343,6 +343,10 @@ section {
     /* animation: changeinvert 2s infinite alternate; */
 }
 
+#projects .project-titles span {
+    color: #ea366f;
+}
+
 #projects .project-titles:hover {
     color: #14cfb3;
 }
