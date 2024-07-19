@@ -7,7 +7,7 @@
         <meta property="og:image" content="https://alyakakakayla.github.io/devportfolio/images/pinktrexbighalf.png"/>
 
         <title>Kayla Reddick | Front-End Developer</title>
-        <link rel="icon" href="./images/pinktrex.png"> <!--favicon-->
+        <link rel="icon" href="./images/logo.png"> <!--favicon-->
         <link rel="stylesheet" href="styles.css">
         
         <!--chivo mono import-->
@@ -24,27 +24,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--dm serif display import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     </head> 
     <body> 
         <!--------------------------------navbar-------------------------------->
         
         <div class="navbar">
             <a href="#welcome" id="no-underline">
-                <img src="./images/pinktrex.png" alt="pink t-rex" style="height: 60px">
+                <img src="./images/arrow.png" alt="pink t-rex" style="height: 50px; width: 50px">
             </a>
             <input type="checkbox" id="check">
-            <label for="check" class="checkbutton">&equiv;</label>
+            <label for="check" class="checkbutton"><img src="./images/checkbutton.png" style="height: 40px"></label><!--&equiv;-->
             <ul>
-                <li id="welcome-item"><a href="#welcome">welcome</a></li>
-                <li id="about-item"><a href="#about">about</a></li>
-                <li id="work-item"><a href="#work">work</a></li>
-                <li id="contact-item"><a href="#contact">contact</a></li>
+                <li id="welcome-item"><a href="#welcome">WELCOME</a></li>
+                <li id="about-item"><a href="#about">ABOUT</a></li>
+                <li id="work-item"><a href="#work">WORK</a></li>
+                <li id="contact-item"><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
                 <!--------------------------------welcome-------------------------------->
                 <section id="backdrop-welcome">
                     <div id="welcome">
-                        <h1 class="title">hey, i'm <span class="bold">kayla</span>, a front-end developer<br><h6 class="subtitle">+ a game artist and graphic designer</h6></h1>
+                        <!--art is EVERYwhere, art is EVERYthing-->
+                        <!--we ARE -surrounded by- art-->
+                        <h1 class="title">ART IS <span class="bold-welcome">all</span> AROUND US<br><h6 class="subtitle">KAYLA REDDICK<br><span class="bold-subtitle">dreamer, designer, developer</span></h6></h1>
                     </div>
                 </section>
                 <!--------------------------------about-------------------------------->
@@ -54,7 +61,7 @@
                     </h1>
                     <div class="container">
                         <div class="description">
-                            <p>I'm a 20 year old front-end developer based in Richmond, Virginia. From childhood, I've always valued individual expression, and I've grown to find that everyone is an artist of some sort. My love for the arts led me to my life passion for software development, where I'm able to use both my technical and artistic skills to create new things. I dedicate my time to building websites for other artists so they can dedicate theirs to pouring love into their crafts.</p>
+                            <p>I'm a 20 year old front end developer based in Richmond, VA, a city rich with culture, art, and love. Here I discovered my passion for software development, where I use both my technical and artistic skills to create real things that matter to real people. I dedicate my time to building websites for other artists so they can dedicate theirs to pouring their hearts into their crafts.</p>
                         </div>
                         <div class="skills-images">
                             <div class="skills-column">
@@ -136,33 +143,35 @@
                     </h1>
                     <div class="container">
                         <div class="description">
-                            <p>Questions or comments? Leave a message and I'll reach out to you ASAP. Let's connect!</p>
+                            <p>Questions or comments? Leave a message and I'll reach out to you ASAP.</p>
                         </div>
                         <div class="form-container">
                             <form action="https://formsubmit.co/b62fd282284347802f369c90dc926bf9" method="post" name="contact" target="_blank">
                                 <div class="input-row">
-                                    <input type="text" name="name" placeholder="Name *" required>
+                                    <input type="text" name="name" placeholder="NAME *" required>
                                 </div>
                                 <div class="input-row">
-                                    <input type="text" name="email" placeholder="Email *" required>
+                                    <input type="text" name="email" placeholder="EMAIL *" required>
                                 </div>
                                 <div class="input-row">
-                                    <input type="text" name="subject" placeholder="Subject">
+                                    <input type="text" name="subject" placeholder="SUBJECT">
                                 </div>
                                 <div class="input-row">
-                                    <textarea name="message" placeholder="Message *" required></textarea>
+                                    <textarea name="message" placeholder="MESSAGE *" required></textarea>
                                 </div>
                                 <div class="input-row">
-                                    <input id="submit-button" type="submit" name="send" value="Submit" class="slide">
+                                    <input id="submit-button" type="submit" name="send" value="submit" class="slide">
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="container-icon">
-                        <a href="#footer" id="trex-icon">
-                            <img src="./images/pinktrexbighalf.png" alt="pink trex half">
-                        </a>
-                    </div>
+                    <!--
+                        <div class="container-icon">
+                            <a href="#footer" id="trex-icon">
+                                <img src="./images/pinktrexbighalf.png" alt="pink trex half">
+                            </a>
+                        </div>
+                    -->
                 </div>
 
                 <!--------------------------------footer-------------------------------->
