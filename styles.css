@@ -425,6 +425,10 @@ section {
     padding-top: 80px;
 }
 
+#contact .container {
+    padding: 0 0 40px 0;
+}
+
 #contact .container .description {
     padding-left: 80px;
     padding-right: 80px;
@@ -456,8 +460,7 @@ section {
     background-color: #000000;
     color: #ffffff;
     font-family: 'DM Serif Display';
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 28px;
     cursor: pointer;
     border: 2px solid transparent;
     text-align: center;
@@ -629,7 +632,7 @@ textarea:focus {
         width: 100%;
     }
     #submit-button {
-        font-size: 15px;
+        font-size: 25px;
     }
     #welcome h1 {
         font-size: 20px;
