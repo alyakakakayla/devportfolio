@@ -459,8 +459,10 @@ section {
     width: 65%; 
     background-color: #000000;
     color: #ffffff;
-    font-family: 'DM Serif Display';
+    font-family: 'Montserrat';
     font-size: 28px;
+    font-weight: 500;
+    text-decoration: underline;
     cursor: pointer;
     border: 2px solid transparent;
     text-align: center;
@@ -469,7 +471,7 @@ section {
 }
 
 input[type="submit"]:hover {
-    color: #ffffff;
+    color: #ea366f;
 }
 
 input[type="text"] {
