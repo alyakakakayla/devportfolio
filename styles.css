@@ -235,11 +235,53 @@ section {
     padding-bottom: 10px;
 }
 
+.skill #skill-1 {
+    animation: breathegray 3s infinite alternate;
+}
+
+.skill #skill-3 {
+    animation: breathegray 3s infinite alternate;
+}
+
+.skill #skill-5 {
+    animation: breathegray 3s infinite alternate;
+}
+
+.skill #skill-7 {
+    animation: breathegray 3s infinite alternate;
+}
+
+.skill #skill-9 {
+    animation: breathegray 3s infinite alternate;
+}
+
+.skill #skill-2 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 2s;
+}
+
+.skill #skill-4 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 2s;
+}
+
+.skill #skill-6 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 2s;
+}
+
+.skill #skill-8 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 2s;
+}
+
 .skill img:hover {
-    animation: breathegray 1s forwards;
-    /* border: solid 5px #14cfb3;
+    /*
+    animation: breathegray 3s infinite alternate;
+    border: solid 5px #14cfb3;
     border-radius: 20px;
-    animation: fadein 1.5s; */
+    animation: fadein 1.5s;
+    */
 }
 
 .skill-name {
@@ -288,12 +330,10 @@ section {
 @keyframes breathegray {
     0% {
         transform: scale(1);
-        filter: hue-rotate(0deg);
-        filter: drop-shadow(0px 0px 0px transparent);
+        filter: drop-shadow(0px 0px 0px transparent) grayscale(100) brightness(2);
     }
     100% {
         transform: scale(1.1);
-        filter: hue-rotate(-120deg);
         filter: drop-shadow(0px 0px 9px #f83c94);
     }
 }
