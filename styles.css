@@ -20,8 +20,8 @@ section {
     z-index: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(-155deg, #ffffff, #000000);
-    background-size: 400% 400%;
+    background: linear-gradient(-135deg, #000000, #ffffff);
+    background-size: 200% 200%;
     position: relative;
     animation: change 10s ease-in-out infinite;
 }
@@ -40,17 +40,17 @@ section {
 
 @keyframes changeinvert {
     0% {
-        color: #ffffff;
+        color: #000000;
     }
     25% {
-        color: #ffffff;
+        color: #000000;
     }
     
     75% {
-        color: #000000;
+        color: #ffffff;
     }
     100% {
-        color: #000000;
+        color: #ffffff;
     }
 }
 
