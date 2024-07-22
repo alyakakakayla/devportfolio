@@ -624,6 +624,16 @@ textarea:focus {
 }
 
 /*--------------------------------media queries--------------------------------*/
+@media (min-width: 1200px) {
+    .skills-column {
+        padding: 40px;
+        width: 200px;
+    }
+    .skills-images img {
+        width: 200px;
+    }
+}
+
 @media (min-width: 481px) {
     .skills-column {
         padding: 20px;
@@ -631,74 +641,43 @@ textarea:focus {
     }
 }
 
-@media (max-width: 480px) {
-    .navbar ul {
-        padding-top: 80px;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #000000;
-        text-align: center;
-        right: -100%;
-        transition: all 0.5s;
+@media (max-width: 1024px) {
+    #about .container {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 3%;
     }
-
-    .navbar ul li {
-        display: block;
+    #work .container {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
     }
-
-    .checkbutton {
-        display: block;
-    }
-
-    #check:checked ~ ul {
-        padding-top: 80px;
-        right: 0;
-    }
-    /*
     .first-work {
-        padding-left: 0;
-        padding-right: 0;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 40px;
+        padding-top: 3%;
     }
-    */
-    .form-container form {
-        width: 300px;
+    .second-work {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
     }
-    .form-container {
-        width: 100vw;
-        margin: 0 auto;
+    #work .first-work .work-image {
+        order: 2;
     }
-    input[type="submit"] {
-        width: 50vw;
+    
+    #work .first-work .description {
+        order: 1;
     }
-    .input-row {
-        margin-bottom: 15px;
-        width: 100%;
+    .description {
+        flex: none; 
+        width: 100%; 
+        text-align: center;
     }
-    #submit-button {
-        font-size: 20px;
-    }
-    #welcome h1 {
-        font-size: 20px;
-    }
-    #welcome .subtitle {
-        font-size: 15px;
-    }
-    #welcome .title .bold-welcome {
-        font-size: 50px;
-    }
-    .skill {
-        padding: 5px;
-    }
-    .skills-column {
-        padding: 10px;
-        width: 100px;
-    }
-    textarea {
-        height: 130px;
-        /* padding: 18px 0px 150px 9px; */
-    }
-} 
+}
 
 @media (max-width: 768px) {
     .bold {
@@ -748,52 +727,74 @@ textarea:focus {
     }
 }
 
-@media (max-width: 1024px) {
-    #about .container {
-        flex-direction: column;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 3%;
-    }
-    #work .container {
-        flex-direction: column;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .first-work {
-        flex-direction: column;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-bottom: 40px;
-        padding-top: 3%;
-    }
-    .second-work {
-        flex-direction: column;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    #work .first-work .work-image {
-        order: 2;
-    }
-    
-    #work .first-work .description {
-        order: 1;
-    }
-    .description {
-        flex: none; 
-        width: 100%; 
+@media (max-width: 480px) {
+    .navbar ul {
+        padding-top: 80px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
         text-align: center;
+        right: -100%;
+        transition: all 0.5s;
     }
-}
-@media (min-width: 1200px) {
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .checkbutton {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        padding-top: 80px;
+        right: 0;
+    }
+    /*
+    .first-work {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    */
+    .form-container form {
+        width: 280px;
+    }
+    .form-container {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    input[type="submit"] {
+        width: 50vw;
+    }
+    .input-row {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #submit-button {
+        font-size: 20px;
+    }
+    #welcome h1 {
+        font-size: 20px;
+    }
+    #welcome .subtitle {
+        font-size: 15px;
+    }
+    #welcome .title .bold-welcome {
+        font-size: 50px;
+    }
+    .skill {
+        padding: 5px;
+    }
     .skills-column {
-        padding: 40px;
-        width: 200px;
+        padding: 10px;
+        width: 100px;
     }
-    .skills-images img {
-        width: 200px;
+    textarea {
+        height: 130px;
+        /* padding: 18px 0px 150px 9px; */
     }
-}
+} 
 
 /*
 ::-webkit-scrollbar {
