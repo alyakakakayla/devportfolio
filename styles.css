@@ -239,40 +239,44 @@ section {
     animation: breathegray 3s infinite alternate;
 }
 
-.skill #skill-3 {
-    animation: breathegray 3s infinite alternate;
-}
-
-.skill #skill-5 {
-    animation: breathegray 3s infinite alternate;
-}
-
-.skill #skill-7 {
-    animation: breathegray 3s infinite alternate;
-}
-
-.skill #skill-9 {
-    animation: breathegray 3s infinite alternate;
-}
-
 .skill #skill-2 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 1s;
+}
+
+.skill #skill-3 {
     animation: breathegray 3s infinite alternate;
     animation-delay: 2s;
 }
 
 .skill #skill-4 {
     animation: breathegray 3s infinite alternate;
+    animation-delay: 1s;
+}
+
+.skill #skill-5 {
+    animation: breathegray 3s infinite alternate;
     animation-delay: 2s;
 }
 
 .skill #skill-6 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 3s;
+}
+
+.skill #skill-7 {
     animation: breathegray 3s infinite alternate;
     animation-delay: 2s;
 }
 
 .skill #skill-8 {
     animation: breathegray 3s infinite alternate;
-    animation-delay: 2s;
+    animation-delay: 3s;
+}
+
+.skill #skill-9 {
+    animation: breathegray 3s infinite alternate;
+    animation-delay: 4s;
 }
 
 .skill img:hover {
