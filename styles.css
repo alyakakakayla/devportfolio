@@ -295,6 +295,8 @@ section {
 .skills-column .skill img {
     width: 90%;
     height: auto;
+    -webkit-filter: drop-shadow(0px 0px 0px transparent) grayscale(100) brightness(2);
+    filter: drop-shadow(0px 0px 0px transparent) grayscale(100) brightness(2);
 }
 /*--------------------------------skills end--------------------------------*/
 /* @keyframes fadein {
@@ -333,7 +335,6 @@ section {
 
 @keyframes breathegray {
     0% {
-        transform: scale(1);
         -webkit-filter: grayscale(100) brightness(2);
         filter: drop-shadow(0px 0px 0px transparent) grayscale(100) brightness(2);
     }
