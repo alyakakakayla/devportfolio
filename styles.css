@@ -799,6 +799,10 @@ textarea:focus {
         height: 130px;
         /* padding: 18px 0px 150px 9px; */
     }
+    .first-work img {
+        width: 85vw;
+    }
+    
 } 
 
 /*
