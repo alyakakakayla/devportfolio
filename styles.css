@@ -802,6 +802,9 @@ textarea:focus {
     .first-work img {
         width: 85vw;
     }
+    #work .container .description {
+        width: 80vw;
+    }
     
 } 
 
