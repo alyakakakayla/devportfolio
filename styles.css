@@ -333,6 +333,18 @@ section {
     width: fit-content;
 }
 
+#about .container .description span {
+    text-decoration: underline;
+}
+
+#about .container .description span:hover {
+    color: #ea366f;
+}
+
+#about .container .description span a:hover {
+    color: #ea366f;
+}
+
 @keyframes breathegray {
     0% {
         -webkit-filter: grayscale(100) brightness(2);
@@ -755,6 +767,9 @@ textarea:focus {
     #check:checked ~ ul {
         padding-top: 80px;
         right: 0;
+    }
+    #about .container .description {
+        padding-bottom: 3%;
     }
     /*
     .first-work {
